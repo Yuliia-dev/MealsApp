@@ -211,6 +211,7 @@ ul {
 .search-container .btn {
   font-size: 0.75rem;
 }
+
 /* Favorites */
 .favorites {
   background: var(--black);
@@ -248,6 +249,7 @@ ul {
 .remove-btn:hover {
   color: var(--red-dark);
 }
+
 /* Meals */
 .section,
 .section-center {
@@ -261,14 +263,14 @@ ul {
   display: grid;
   gap: 2rem;
 }
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 768px) {
   .section-center {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .section-center {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .single-meal {
@@ -309,6 +311,7 @@ ul {
   color: var(--red-dark);
   transform: translateY(-2px);
 }
+
 /* Modal */
 
 .modal-overlay {
